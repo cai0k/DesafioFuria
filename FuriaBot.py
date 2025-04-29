@@ -1,7 +1,8 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, ContextTypes, filters
 import unicodedata
-from furia_keys import BOT_TOKEN
+import os
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 from datetime import datetime
 
 

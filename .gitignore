@@ -1,0 +1,4 @@
+furia_keys.py
+.env
+__pycache__/
+*.pyc

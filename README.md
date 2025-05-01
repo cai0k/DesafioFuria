@@ -86,9 +86,9 @@ Agora seu bot está ativo e pode ser usado no Telegram!
 
 ### Implementar notificações automáticas 30 minutos antes dos jogos:
 
-   • Permitir que o usuário personalize alertas de campeonatos
-   • Integração com API oficial da ESL para dados em tempo real
-   • Uso de inteligência artificial para resumos pós-jogo
+   #### • Permitir que o usuário personalize alertas de campeonatos
+   #### • Integração com API oficial da ESL para dados em tempo real
+   #### • Uso de inteligência artificial para resumos pós-jogo
 
 ## 📄 Licença
 

@@ -5,12 +5,13 @@ O objetivo é criar um bot no Telegram para engajar e informar os fãs sobre jog
 
 ---
 
-## 🚀 Funcionalidades
+## 🐍 Funcionalidades
 
-- ✅ Teclado interativo com opções rápidas
-- ✅ Responde perguntas digitadas de forma inteligente
-- ✅ Atualiza automaticamente o tempo para os próximos campeonatos
-- ✅ Mensagens personalizadas e organizadas
+- 🎮 Informa o próximo jogo da FURIA
+- 📊 Mostra os resultados mais recentes
+- 🧠 Exibe o lineup atual
+- 🏆 Lista os próximos campeonatos (com contagem regressiva automática)
+- 📲 Compartilha as redes sociais oficiais da FURIA
 
 ---
 
@@ -18,45 +19,63 @@ O objetivo é criar um bot no Telegram para engajar e informar os fãs sobre jog
 
 - Python 3.10+
 - Biblioteca `python-telegram-bot`
-- Hospedagem em nuvem (Render ou Railway)
 
 ---
 
 ## 📄 Como rodar o projeto localmente
 
-1. Clone o repositório:
+### 1. Clone o repositório:
    ```bash
    git clone https://github.com/cai0k/DesafioFuria.git
    cd DesafioFuria
+   ``` 
 
-2. Instale as dependências:
-    pip install python-telegram-bot
+### 2. Instale as dependências
+
+```bash
+pip install python-telegram-bot
+```
 
 
-3. Configure o token do bot:
-    Crie um arquivo token.py contendo:
-        BOT_TOKEN = "seu-token-aqui"
+### 3. Crie seu bot no Telegram
+
+1. Acesse o [@BotFather](https://t.me/BotFather) no Telegram.
+2. Envie `/newbot` e siga os passos.
+3. Copie o **token do bot** gerado.
 
 
-4. Rode o projeto:
-    python main.py
+### 4. Crie o arquivo `furia_keys.py`
+
+Na raiz do projeto, crie o arquivo `furia_keys.py` com o conteúdo:
+
+```python
+BOT_TOKEN = "seu_token_aqui"
+```
+
+> Substitua `"seu_token_aqui"` pelo token do seu bot.
 
 ---
 
-## 🖥️ Hospedagem e Deploy
+### 5. Rode o bot
 
-Para manter o bot sempre online, recomenda-se usar:
-    - Render
-    - Railway
+```bash
+python FuriaBot.py
+```
 
-Comando de inicialização:
-    python main.py
+Você verá a mensagem:
+
+```
+Bot rodando...
+```
+
+Agora seu bot está ativo e pode ser usado no Telegram!
 
 ---
 
 ## 📸 Layout do Bot
 
-Teclado de opções exibido no início:
+### Teclado de opções exibido no início:
+
     [ Proximo Jogo ] [ Ultimos Resultados ]
     [ Lineup ] [ Proximos Campeonatos ]
     [ Redes Sociais ]
@@ -65,7 +84,12 @@ Teclado de opções exibido no início:
 
 ## ✨ Melhorias Futuras
 
-Implementar notificações automáticas 30 minutos antes dos jogos:
+### Implementar notificações automáticas 30 minutos antes dos jogos:
+
    • Permitir que o usuário personalize alertas de campeonatos
    • Integração com API oficial da ESL para dados em tempo real
    • Uso de inteligência artificial para resumos pós-jogo
+
+## 📄 Licença
+
+Este projeto é apenas para fins educacionais e não possui vínculo oficial com a FURIA Esports.

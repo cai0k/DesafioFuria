@@ -1,8 +1,7 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, ContextTypes, filters
 import unicodedata
-import os
-BOT_TOKEN = os.environ["BOT_TOKEN"]
+from furia_keys import BOT_TOKEN
 from datetime import datetime
 
 
@@ -69,7 +68,7 @@ def analisar_mensagem(texto):
 
         return resposta_campeonatos.strip()
 
-    if ("redes sociais" in texto or "instagram" in texto or "twitter" in texto or "youtube" in texto or "site" in texto or "x" in texto):
+    if ("redes sociais" in texto or "instagram" in texto or "twitter" in texto or "youtube" in texto or "site" in texto or "x" in texto or "redes" in texto):
         return ("📲 Redes da FURIA:\n"
                 "• Instagram: https://instagram.com/furiagg\n"
                 "• X: https://x.com/FURIA\n"
